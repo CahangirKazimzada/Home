@@ -3,7 +3,9 @@ const sidebar = document.querySelector(".sidebar");
 const closeIcon = document.querySelector(".fa-x");
 const opacity = document.querySelector(".opacity");
 const btn = document.getElementById("btn")
-const openList = document.querySelector(".openList")
+const btn2 = document.getElementById("btn2")
+const openList = document.querySelector(".openList");
+const sublist = document.querySelector(".sublist");
 console.log(btn);
 
 menuIcon.addEventListener("click", () => {
@@ -17,6 +19,9 @@ closeIcon.addEventListener("click", () => {
 
 btn.addEventListener("click", () => {
     openList.classList.toggle("closeList");
-    // btn.style.classList.toggle("rotate");
-    console.log("salam");
+    btn.classList.toggle("rotate");
+})
+btn2.addEventListener("click", () => {
+    sublist.classList.toggle("sublist-open")
+    btn2.classList.toggle("rotate");
 })
